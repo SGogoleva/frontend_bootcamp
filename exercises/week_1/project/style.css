@@ -190,7 +190,7 @@ ul li {
     font-size: 100px;
     padding-top: 50px;
 } */
-div {
+/* div {
     background-color: black;
     color: white;
     position: fixed;
@@ -200,4 +200,280 @@ div {
 }
 div p {
     font-family: Arial, Helvetica, sans-serif;
+} */
+/* Day 3 */
+/* CSS Positioning Exercises */
+/* Present */
+/* div {
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+div div:nth-child(n+1) {
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+}
+div div:nth-child(1) {
+    left: 30px;
+    padding-bottom: 290px;
+}
+div div:nth-child(2) {
+    top: 50px;
+    padding-right: 290px;
+} */
+/* Graph */
+/* #main {
+    background-color: rgb(131, 66, 234);
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    position: relative;
+}
+div div:nth-child(n+3) {
+    background-color: rgb(151, 140, 140);
+    position: absolute;
+    border-radius: 0;
+    width: 20px;
+    bottom: 5px;
+}
+div div:nth-child(3) {
+    left: 5px;
+    height: 20px;
+}
+div div:nth-child(4) {
+    left: 45px;
+    height: 80px;
+}
+div div:nth-child(5) {
+    left: 85px;
+    height: 120px;
+}
+div div:nth-child(6) {
+    left: 125px;
+    height: 100px;
+}
+div div:nth-child(7) {
+    left: 165px;
+    height: 90px;
+}
+div div:nth-child(8) {
+    left: 205px;
+    height: 40px;
+}
+.text {
+    position: absolute;
+}
+#money {
+    top: 5px;
+    left: 10px;
+}
+#time {
+    bottom: 5px;
+    right: 10px;
+} */
+/* Magnet */
+/* #main {
+    background-color: red;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    position: relative;
+
+}
+div div:nth-child(n+1) {
+    position: absolute;
+}
+div div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+div div:nth-child(2) {
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    right: 0px;
+}
+div div:nth-child(3) {
+    height: 100px;
+    width: 200px;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    top: 0px;
+    left: 50px;
+} */
+/* Chocolate */
+/* #background {
+    width: 440px;
+    height: 220px;
+    background-color: black;
+    position: relative;
+}
+.line {
+    background-color: darkred;
+    width: 430px;
+    height: 6px;
+    position: absolute;
+    top: 107px;
+    left: 5px;
+}
+.piece {
+    background-color: #66320E;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    float: left;
+}
+.clearfix {
+    clear: both;
+} */
+/* CSS Grid */
+/* #container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "h h h h h h""s m m m m m""s m m m m m""s m m m m m""s f f f f f";
+    grid-gap: 10px;
+}
+.head{
+    grid-area: h;
+    background-color: rgb(246, 178, 83);
+}
+
+.side-nav{
+    grid-area: s;
+    background-color: coral;
+}
+
+.main{
+    grid-area: m;
+    background-color: aquamarine;
+}
+
+.foot{
+    grid-area: f;
+    background-color: lightgrey;
+} */
+/* Layout 1 */
+/* #container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "h h h h h h""f f m s s s""f f m s s s""f f m s s s""f f m s s s";
+}
+.head{
+    grid-area: h;
+    background-color: rgb(246, 178, 83);
+}
+
+.side-nav{
+    grid-area: s;
+    background-color: coral;
+}
+
+.main{
+    grid-area: m;
+    background-color: aquamarine;
+}
+
+.foot{
+    grid-area: f;
+    background-color: lightgrey;
+} */
+/* Layout 2 */
+/* #container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "s s s s s s""f f f m m h""f f f m m h""f f f m m h""f f f m m h";
+}
+.head{
+    grid-area: h;
+    background-color: rgb(246, 178, 83);
+}
+
+.side-nav{
+    grid-area: s;
+    background-color: coral;
+}
+
+.main{
+    grid-area: m;
+    background-color: aquamarine;
+}
+
+.foot{
+    grid-area: f;
+    background-color: lightgrey;
+} */
+/* Layout 3 */
+/* #container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "h h f f s s""h h f f s s""h h f f s s""h h m m s s""h h m m s s";
+}
+.head{
+    grid-area: h;
+    background-color: rgb(246, 178, 83);
+}
+
+.side-nav{
+    grid-area: s;
+    background-color: coral;
+}
+
+.main{
+    grid-area: m;
+    background-color: aquamarine;
+}
+
+.foot{
+    grid-area: f;
+    background-color: lightgrey;
+} */
+/* Layout 4 */
+#container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "h h f f s s""h h f f s s""h h . . s s""h h m m s s""h h m m s s";
+}
+.head{
+    grid-area: h;
+    background-color: rgb(246, 178, 83);
+}
+
+.side-nav{
+    grid-area: s;
+    background-color: coral;
+}
+
+.main{
+    grid-area: m;
+    background-color: aquamarine;
+}
+
+.foot{
+    grid-area: f;
+    background-color: lightgrey;
 }
