@@ -201,8 +201,12 @@ ul li {
 div p {
     font-family: Arial, Helvetica, sans-serif;
 } */
+
+
 /* Day 3 */
+
 /* CSS Positioning Exercises */
+
 /* Present */
 /* div {
     background-color: blue;
@@ -224,6 +228,7 @@ div div:nth-child(2) {
     top: 50px;
     padding-right: 290px;
 } */
+
 /* Graph */
 /* #main {
     background-color: rgb(131, 66, 234);
@@ -274,6 +279,7 @@ div div:nth-child(8) {
     bottom: 5px;
     right: 10px;
 } */
+
 /* Magnet */
 /* #main {
     background-color: red;
@@ -311,6 +317,7 @@ div div:nth-child(3) {
     top: 0px;
     left: 50px;
 } */
+
 /* Chocolate */
 /* #background {
     width: 440px;
@@ -336,6 +343,8 @@ div div:nth-child(3) {
 .clearfix {
     clear: both;
 } */
+
+
 /* CSS Grid */
 /* #container {
     height: 100vh;
@@ -365,6 +374,7 @@ div div:nth-child(3) {
     grid-area: f;
     background-color: lightgrey;
 } */
+
 /* Layout 1 */
 /* #container {
     height: 100vh;
@@ -393,6 +403,7 @@ div div:nth-child(3) {
     grid-area: f;
     background-color: lightgrey;
 } */
+
 /* Layout 2 */
 /* #container {
     height: 100vh;
@@ -421,6 +432,7 @@ div div:nth-child(3) {
     grid-area: f;
     background-color: lightgrey;
 } */
+
 /* Layout 3 */
 /* #container {
     height: 100vh;
@@ -449,8 +461,9 @@ div div:nth-child(3) {
     grid-area: f;
     background-color: lightgrey;
 } */
+
 /* Layout 4 */
-#container {
+/* #container {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -476,4 +489,602 @@ div div:nth-child(3) {
 .foot{
     grid-area: f;
     background-color: lightgrey;
+} */
+
+/* #nav-container{
+    display: grid;
+    background-color: #2c3e50;
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.main-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.nav-item{
+    display: grid;
+    align-content: center;
+    color: #ecf0f1;
+    height: 100%;
+}
+.logo-container{
+    display: grid;
+    justify-content: end;
+} */
+
+/* #search-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#results-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.result{
+    display: grid;
+    height: 100px;
+    background-color: #16a085;
+    text-align: center;
+    align-content: center;
+    border-radius: 4px;
+} */
+
+
+/* Chat UI Exercise */
+/* #container {
+    display: grid;
+    height: 100vw;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15fr 1fr;
+    grid-template-areas: 
+                        "s m"
+                        "s sm";
+
+}
+.side_bar {
+    grid-area: s;
+    display: grid;
+    background-color: blueviolet;
+}
+.message_page {
+    grid-area: m;
+    background-color: bisque;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+.send_message {
+    grid-area: sm;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.message {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.message.recieved {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+    background-color: gray;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.message.sent {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+    background-color: green;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.message.recieved p{
+    display: grid;
+    justify-content: start;
+}
+.message.sent p{
+    display: grid;
+    justify-content: end;
+}
+
+.friend {
+    background-color: rgb(180, 128, 228);
+    margin: 0px 5px auto 5px;
+}
+.txt {
+    font-size: 20px;
+}
+.time {
+    align-self: flex-end;
+}
+.send-btn {
+    display: grid;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    align-content: center;
+    padding: 10px 30px;
+} */
+
+
+/* Free-Form Exercise */
+/* #container {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: "h" "m" "b";
+}
+.header {
+    display: grid;
+    grid-area: h;
+    background-color: #C6DCBA;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+.main{
+    display: grid;
+    grid-area: m;
+    background-color: #BBC3A4;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+} 
+.bottom {
+    display: grid;
+    grid-area: b;
+    background-color: #B3A398;
+}
+img {
+    width: 90%;
+}
+.article {
+    text-align: center;
+    margin-top: 60px;
+}
+.article p {
+    margin-top: 5px;
+    text-align: start;
+    margin-left: 15px;
+    text-align: justify;
+}
+.article_side {
+    text-align: center;
+    margin-top: 60px;
+}
+.article_side p {
+    margin-top: 0px;
+    margin-right: 15px;
+    text-align: justify;
+}
+.article_side p:first-child {
+    margin-bottom: 50px;
+}
+.header div {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.bottom {
+    display: grid;
+    justify-content: start;
+    align-content: center;
+} */
+
+
+/* Ex 1 */
+/* #container {
+    display: grid;
+    height: 100vw;
+    grid-template-columns: fit-content(560px);
+    grid-template-rows: fit-content(160px) fit-content(160px) fit-content(160px);
+    grid-template-areas: 
+                        "circle"
+                        "center"
+                        "laz_rec";
+    grid-gap: 10px;
+}
+.circle {
+    display: grid;
+    grid-area: circle;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+                        "wr c"
+                        "pr c";
+    grid-gap: 10px;
+}
+.circ {
+    background-color: gray;
+    border-radius: 50%;
+    border: 3px solid black;
+    height: 150px;
+    width: 150px;
+    display: grid;
+    grid-area: c;
+    margin: auto;
+}
+.white {
+    display: grid;
+    grid-area: wr;
+    grid-template-columns: 1fr 1fr; 
+    margin-right: auto;
+    grid-gap: 10px;
+    margin-top: auto;
+}
+.w_rec {
+    background-color: white;
+    border: 3px solid black;
+    height: 50px;
+    width: 150px;
+}
+.p_rec {
+    background-color: purple;
+    border: 3px solid black;
+    height: 50px;
+    width: 316px;
+    display: grid;
+    grid-area: pr;
+}
+.center {
+    display: grid;
+    grid-area: center;
+    grid-gap: 10px;
+    grid-template-rows: fit-content(156px);
+    grid-template-columns: fit-content(580px);
+}
+.purp_rec {
+    background-color: purple;
+    border: 3px solid black;   
+    height: 50px; 
+    width: 316px;
+    display: grid;
+    justify-self: end;
+}
+.blue_rec {
+    background-color: rgb(97, 50, 207);
+    border: 3px solid black;
+    width: 560px;
+    height: 50px;
+    
+}
+.laz_rec {
+    background-color: rgb(51, 155, 186);
+    border: 3px solid black;
+    height: 150px;
+    width: 316px;
+    display: grid;
+    grid-area: laz_rec;
+    justify-self: end;
+}
+.laz_rec div.w_rec {
+    margin: 5px;
+}
+.laz_rec div.w_rec:nth-child(2) {
+    justify-self: end;
+} */
+
+
+/* Ex 2 */
+/* #container {
+    display: grid;
+    grid-template-columns: 2fr 6fr 4fr;
+    grid-template-areas: "s l r";
+}
+.side {
+    display: grid;
+    grid-area: s;
+    background-color: rgb(35, 35, 98);
+    grid-template-rows: fit-content(165px) fit-content(165px) fit-content(165px);
+}
+.left {
+    display: grid;
+    grid-area: l;
+    margin-left: 20px;
+}
+.right {
+    display: grid;
+    grid-area: r;
+    grid-template-rows: auto 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: wheat;
+}
+.side p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.study {
+    margin: 100px auto 30px 5px;
+}
+.build {
+    margin: 0px auto 30px 5px;
+}
+.help {
+    margin: 0px auto 30px 5px;
+}
+.left .tab_1 {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: auto;
+}
+
+.box{
+    background-color: wheat;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    align-content: center;
+}
+.circle {
+    background-color: rgb(202, 241, 228);
+    border-radius: 50%;
+    border: 1px solid rgb(113, 224, 187);
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
+.left .button {
+    color: white;
+    background-color: rgb(30, 82, 113);
+    width: 100px;
+    border-radius: 2px;
+    border: none;
+    align-self: center;
+    white-space: nowrap;
+    text-align: center;
+    grid-template-columns: 1fr;
+}
+.left p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+}
+.to_do {
+    display: grid;
+    grid-template-rows: auto repeat(7, 1fr);
+    grid-gap: 10px;
+}
+.right .button {
+    color: white;
+    background-color: rgb(30, 82, 113);
+    width: 100px;
+    border-radius: 2px;
+    border: none;
+    align-self: flex-end;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: auto;
+}
+.right p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.feedback {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(58, 53, 53);
+}
+.right .box {
+    background-color: white;
+    border: 1px solid gray;
+}
+.top_line {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: rgb(58, 53, 53);
+}
+.top_line div {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    border: 1px solid white;
+    height: 14px;
+    width: 40px;
+    margin: auto 3px auto auto;
+    display: grid;
+    align-content: center;
+}
+.feedback p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    display: grid;
+    justify-self: center;
+    margin: auto;
+} */
+
+
+#container {
+    display: grid;
+    height: 100vw;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "side main";
+}
+.side {
+    display: grid;
+    grid-area: side;
+    background-color: rgb(50, 49, 49);
+    grid-template-rows: 1fr 1fr;
+}
+.main {
+    display: grid;
+    grid-area: main;
+    background-color: rgb(74, 71, 71);
+    grid-template-columns: auto auto;
+}
+.menu div{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.menu .logo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(211, 163, 60);
+    border: none;
+    display: grid;
+    align-self: center;
+    margin-left: 10px;
+}
+.menu p {
+    color: rgb(216, 202, 202);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.settings div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.settings{
+    margin-top: auto;
+}
+.settings .logo {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(211, 163, 60);
+    border: none;
+    display: grid;
+    align-self: center;
+    margin-left: 10px;
+}
+.settings p {
+    color: rgb(156, 145, 145);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.left {
+    margin-left: 100px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin-right: 15px;
+}
+.up {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    margin-top: auto;
+}
+.down {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    margin-bottom: auto;
+}
+.pic {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(121, 120, 119);
+    display: grid;
+    align-self: center;
+}
+.left p {
+    color: rgb(216, 202, 202);
+    margin-left: 10px;
+    align-self: center;
+}
+.up .timer {
+    display: grid;
+    color: rgb(216, 202, 202);
+    width: auto;
+    height: 35px;
+    background-color: rgb(50, 49, 49);
+    align-self: center;
+    align-content: center;
+    padding-left: 50px;
+    padding-right: 10px;
+}
+.down .timer {
+    display: grid;
+    align-self: center;
+    width: auto;
+    height: 35px;
+    background-color: rgb(121, 120, 119);
+    align-self: center;
+    align-content: center;
+    padding-left: 50px;
+    padding-right: 10px;
+}
+.chess {
+    width: 400px;
+    height: 400px;
+    background-color: wheat;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-self: center;
+    align-self: center;
+}
+.chess div {
+    width: 50px;
+    height: 50px;
+}
+.col:nth-child(2n) div:nth-child(2n+1)  {
+    background-color: green;
+}
+.col:nth-child(2n+1) div:nth-child(2n)  {
+    background-color: green;
+}
+.right {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-left: 15px;
+}
+.buttons {
+    margin-top: 155px;
+    display: grid;
+    grid-template-rows: auto auto;
+    background-color: rgb(54, 45, 45);
+}
+.top_b {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.top_b div {
+    color: rgb(216, 202, 202);
+    height: 50px;
+    width: 100px;
+    background-color: rgb(25, 18, 18);
+    text-align: center;
+    line-height: 50px;
+    margin: 0px 10px 0px 10px
+}
+.bot_b div {
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    margin: auto;
+}
+.bot_b div:first-child {
+    background-color: rgb(74, 71, 71);
+    margin-bottom: 20px;
+}
+.bot_b div:nth-child(2) {
+    background-color: green;
+}
+.b_buttons {
+    margin: 0px auto auto auto;
+    color: rgb(156, 145, 145);
+}
+.b_buttons div {
+    background-color: rgb(25, 18, 18);
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 20px;
 }
