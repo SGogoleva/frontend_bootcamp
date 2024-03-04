@@ -1,4 +1,7 @@
-#container {
+/* Day 1 */
+
+/* Twitter Banner */
+/* #container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -55,4 +58,93 @@
     font-weight: bold;
     text-align: center;
     line-height: 170px;
+} */
+
+/* Day 2 */
+/* Calculator */
+* {
+    font-family: Inter;
+}
+.calculator {
+    background-color: #151515;
+    width: 390px;
+    height: 844px;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+.calculator .buttons {
+    height: 522px;
+    width: 390px;
+}
+.calculator .display {
+    height: 322px;
+}
+.line {
+    width: 352px;
+    height: 1px;
+    background-color: #4E4D4D;
+    margin: auto;
+}
+.buttons ul li {
+    font-size: 36px;
+    list-style-type: none;
+    color: #FFFFFF;
+    width: 73px;
+    height: 75px;
+    border-radius: 9px;
+    background-color: #343434;
+    margin-bottom: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 9px;
+    padding-left: 0;
+    margin-left: 19px;
+    margin-right: 19px;
+    justify-content: space-between;
+}
+.display .action li {
+    font-size: 48px;
+    color: #FFFFFF;
+    list-style-type: none;
+}
+.display .action {
+    display: flex;
+    margin-left: 238px;
+    padding-top: 77px;
+}
+.display .result {
+    font-size: 48px;
+    color: #969696;
+    margin-left: 334px;
+    padding-top: 30px;
+}
+.display .icons {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-top: 36px;
+    margin-left: 19px;
+}
+.display .icons li:nth-child(-n+3) {
+    margin-right: 25px;
+}
+.display .icons li:nth-child(4) {
+    padding-left: 200px;
+}
+.buttons ul li:first-child {
+    background-color: #FF5959;
+    color: #343434;
+}
+.buttons ul li:last-child {
+    background-color: #66FF7F;
+    color: #343434;
+}
+.buttons ul li.sign {
+    font-size: 24px;
+    color: #66FF7F;
 }
