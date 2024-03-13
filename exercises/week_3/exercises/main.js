@@ -287,3 +287,22 @@
 
 // turnToKing("martin luther", 100) // should print "His Royal Highness, MARTIN LUTHER has 1300 gold coins"
 
+
+// const story = "In the beginning there was light. Then there were wolves. Finally there was a big fire. Ultimately, Shelob the wolf-master put out the fire with her feet. But until then, the fire caused one heck of a lot of damage."
+// const specialChars = [",", ".", "'", '"',"?", "!", ";"]
+// const wordCounts = {}
+// let storyList = story.split(",").join(" ")
+// storyList = storyList.split(".").join(" ")
+// storyList = storyList.toLowerCase().split(" ")
+// console.log(storyList)
+// for(let i = 0; i < storyList.length; i++) {
+//     let counter = 0
+//     for(let j = 0; j < storyList.length; j++) {
+//         if(storyList[i] == storyList[j]) {
+//             counter += 1
+//         }
+//     }
+//     wordCounts[storyList[i]] = counter
+// }
+
+// console.log(wordCounts)
