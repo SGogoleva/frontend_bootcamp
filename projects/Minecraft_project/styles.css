@@ -1,0 +1,47 @@
+.main_container {
+    display: flex;
+    justify-content: center;
+}
+.inventory {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    height: 70px;
+    width: 200px;
+    border: 2px solid #303232;
+    background-color: #D7D7D7;
+    flex-flow: row wrap;
+    column-gap: 20px;
+    row-gap: 7px;
+    justify-content: center;
+    align-content: center;
+    
+}
+.item {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #F3F3F3;
+    background-color: #898989;
+}
+#axe {
+    background-image: url("images/axe-removebg-preview.png");
+    background-size: cover;
+}
+#pickaxe {
+    background-image: url("images/pickaxe-removebg-preview.png");
+    background-size: cover;
+}
+#shovel {
+    background-image: url("images/shovel-removebg-preview.png");
+    background-size: cover;
+}
+.play_field {
+    display: flex;
+    flex-flow: row wrap;
+}
+.tile {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #898989;
+}
+
