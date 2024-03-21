@@ -44,4 +44,7 @@
     height: 100px;
     border: 1px solid #898989;
 }
-
+.tree_background {
+    background-image: url("images/tree.png");
+    background-size: cover;    
+}
