@@ -38,10 +38,38 @@
     display: flex;
     flex-flow: row wrap;
 }
+
+
+/* .field {
+    display: flex;
+}
+.black {
+    background-color: black;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+} */
+
+
 .tile {
     width: 100px;
     height: 100px;
     border: 1px solid #898989;
+}
+.dirt {
+    background-color: #845034;
+}
+.rock {
+    background-color: #787473;
+}
+.grass {
+    background-color: #477639;
+}
+.empty {
+    background-color: #DCD1C7;
 }
 .tree {
     background-image: url("images/tree.png");
@@ -61,4 +89,10 @@
 .collected_tree {
     background-image: url("images/tree.png");
     background-size: cover;    
+}
+.collected_rock {
+    background-color: #787473;
+}
+.collected_dirt {
+    background-color: #845034;
 }
