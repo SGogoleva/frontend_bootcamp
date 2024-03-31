@@ -87,6 +87,7 @@ const clickOnTile = function (action) {
         console.log("the shovel is clicked")
         if (action.target.classList.contains("dirt") || action.target.classList.contains("grass") && !action.target.classList.contains("tree")) {
             action.target.classList.remove("dirt")
+            action.target.classList.remove("grass")
             action.target.classList.add("empty")
             counterDirt += 1
             collectedItems[2].classList.add("collected_dirt")
@@ -112,7 +113,8 @@ const clickOnCollected = function (removeAction) {
     }
     else if (collectedItems[0].classList.contains("clicked")) {
         console.log("collected_tree is clicked")
-        if (removeAction.target.classList.contains("grass")){
+        if (removeAction.target.classList.contains("grass") || removeAction.target.classList.contains("dirt")){
+            removeAction.target.classList.add("grass")
             removeAction.target.classList.add("tree")
             counterTree -= 1
             collectedItems[0].textContent = counterTree
