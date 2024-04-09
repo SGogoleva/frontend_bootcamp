@@ -1,0 +1,33 @@
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://i.pinimg.com/564x/6d/66/b6/6d66b66a8cddfa4f3be53f54d10d55e6.jpg");
+}
+.form {
+    margin-top: 15vh;
+}
+.search_bar {
+    width: 300px;
+    border: 1px solid #2A713C;
+    border-radius: 5px;
+    color: #2A713C;
+}
+#search_btn {
+    background-color: #D5E0D8;
+    border: 1px solid #2A713C;
+    border-radius: 5px;
+    color: #2A713C;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.result {
+    background-color: #D5E0D8;
+    list-style-type: none;
+    padding-left: 0px;
+}
+.result_val {
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+}
