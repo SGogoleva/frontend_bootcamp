@@ -1,0 +1,12 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "app that shows 5day forecast in different cities",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sofia Gogoleva",
+  "license": "ISC"
+}
