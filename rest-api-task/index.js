@@ -1,5 +1,8 @@
+import { error } from "console";
 import express from "express";
 import { v4 as uuidv4 } from "uuid";
+import bodyParser from "body-parser";
+
 const app = express();
 const port = 3000;
 
@@ -37,6 +40,8 @@ const books = [
   },
 ];
 
+app.use(bodyParser.json());
+
 app.get("/books", (req, res) => {
   const booksWithAuthors = books.map((book) => ({
     ...book,
@@ -58,7 +63,53 @@ app.get("/books/:id", (req, res) => {
   res.json(bookWithAuthor);
 });
 
-app.post("/", (req, res) => {});
+app.post("/books", (req, res) => {
+  const { name, price, authorId } = req.body;
+  if (!name || !price || !authorId) {
+    return res.status(400).json({ error: "Must add name, price and authorId" });
+  }
+
+  const isAuthorExists = authors.some((author) => author.id == authorId);
+  if (!isAuthorExists) {
+    return res.status(400).json({ error: "The author does not exists" });
+  }
+
+  const newBook = {
+    id: uuidv4(),
+    name,
+    price,
+    authorId,
+  };
+
+  books.push(newBook);
+  res.status(201).send(newBook);
+});
+
+app.put("/books/:id", (req, res) => {
+  const idRequest = req.params.id;
+  const updBook = books.find((book) => book.id == idRequest);
+  if (!updBook) {
+    return res.status(404).json({ error: "Book not found" });
+  }
+  const { name, price } = req.body;
+  if (name) {
+    updBook.name = name;
+  }
+  if (price) {
+    updBook.price = price;
+  }
+  res.status(204).send(updBook);
+});
+
+app.delete("/books/:id", (req, res) => {
+  const idRequest = req.params.id;
+  const idxBook = books.findIndex((book) => book.id == idRequest);
+  if (idxBook == -1) {
+    return res.status(404).json({ error: "Book not found" });
+  }
+  books.splice(idxBook, 1);
+  res.status(200).end();
+});
 
 app.listen(port, () => {
   console.log(`Server is listening on  http://localhost:${port}`);
