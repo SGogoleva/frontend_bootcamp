@@ -1,0 +1,44 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+}
+.container {
+  margin-top: 10vh;
+  margin-left: 5vw;
+  background-image: url("https://i.pinimg.com/564x/04/32/e5/0432e5aeb34b0fd85c8f944e3a8f9d68.jpg");
+  background-repeat: no-repeat;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+input {
+  max-width: 300px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(13, 60, 41);
+  border-radius: 5px;
+}
+button {
+  max-width: fit-content;
+  font-weight: 600;
+  color: rgb(13, 60, 41);
+  background-color: rgb(155, 175, 132);
+  border: 1px solid rgb(13, 60, 41);
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(129, 146, 109);
+}
+h1 {
+  width: max-content;
+  font-size: 3em;
+  color: rgb(13, 60, 41);
+  margin-left: 10px;
+  background-color: rgba(230, 237, 234, 0.5);
+  border-radius: 10px;
+
+}
